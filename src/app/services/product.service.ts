@@ -10,7 +10,7 @@ export class ProductService {
 
   constructor() {}
 
-  findProduct(id: number): Product | null {
+  getProductById(id: number): Product | null {
     return this.products.find((product) => product.id === id) || null;
   }
 }

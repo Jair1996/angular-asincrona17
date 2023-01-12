@@ -21,8 +21,8 @@
       <td>{{ product.ganancia | currency : "S/. " }}</td>
       <td>{{ product.existencia | number }}</td>
       <td>
-        <button class="btn btn-warning">
-          <a [routerLink]="['/product', product.id]"> Ver más </a>
+        <button [routerLink]="['/product', product.id]" class="btn btn-warning">
+          <a> Ver más </a>
         </button>
       </td>
     </tr>
